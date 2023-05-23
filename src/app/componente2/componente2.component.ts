@@ -8,9 +8,23 @@ import { Component, OnInit } from '@angular/core';
 export class Componente2Component implements OnInit {
 
   nombre = 'Juan';
+  
   apellido = 'Perez';
+  
   edad = 25;
-  empresa = 'IBM';  
+  
+  //empresa = 'IBM';  
+
+
+  habilitacionCuadro = false;
+
+  usuarioRegistrado = false;
+
+
+  getRegistroUsuario(){
+    this.usuarioRegistrado = false;
+  }
+
 
 
   constructor() { }
@@ -20,3 +34,4 @@ export class Componente2Component implements OnInit {
 
 
 }
+ 
